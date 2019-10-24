@@ -16,9 +16,11 @@ fibonacci n =
 
 printTimes :: Int -> IO()
 printTimes 0 = do putStrLn (format "Fib of {0}: {1}" [show 0, show (fibonacci 0)])
+                  -- print (format "Fib of {0}: {1}" [show n, show (fibonacci n)])
 printTimes n = do 
     printTimes (n - 1)
     putStrLn (format "Fib of {0}: {1}" [show n, show (fibonacci n)])
+    -- print (format "Fib of {0}: {1}" [show n, show (fibonacci n)])
 
 main :: IO()
 main = do

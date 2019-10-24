@@ -12,10 +12,12 @@
 (module* main #f
     (define (printing n)
         (if (= n 0)
-            (println (format "Fib of ~a: ~a" n (Fibonacci n)))
+            (display (format "Fib of ~a: ~a~%" n (Fibonacci n)))
+            ; (println (format "Fib of ~a: ~a" n (Fibonacci n)))
             (begin
                 (printing (- n 1))
-                (println (format "Fib of ~a: ~a" n (Fibonacci n)))
+                (display (format "Fib of ~a: ~a~%" n (Fibonacci n)))
+                ; (println (format "Fib of ~a: ~a" n (Fibonacci n)))
             )
         )
     )

@@ -23,4 +23,5 @@ only_evens lst =
 
 main :: IO ()
 main = do
-    print (only_evens [[1, 2, 4], [4, 0, 6], [22, 4, 3], [2]])
+    putStrLn $ show (only_evens [[1, 2, 4], [4, 0, 6], [22, 4, 3], [2]])
+    -- print (only_evens [[1, 2, 4], [4, 0, 6], [22, 4, 3], [2]])
